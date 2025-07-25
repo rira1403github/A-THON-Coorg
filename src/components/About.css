@@ -1,0 +1,67 @@
+.about-us-section {
+  background: #0e1a1f;
+  color: #fff;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+.about-content {
+  max-width: 720px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  position: relative;
+  color: #fff;
+}
+
+.highlight {
+  color: #ffe600;
+}
+
+.underline {
+  width: 60px;
+  height: 3px;
+  background: #ffe600;
+  margin-top: 10px;
+}
+
+.about-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #cfcfcf;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 24px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+
+  .underline {
+    width: 40px;
+  }
+}
+
+/* Optional keyframe if not using AOS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

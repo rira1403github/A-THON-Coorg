@@ -1,0 +1,80 @@
+.reason-section {
+  background: linear-gradient(145deg, #0e1a1f 0%, #0b141a 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.reason-heading {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.reason-slider {
+  display: none;
+}
+
+.reason-card {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 30px 20px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px rgba(196, 214, 0, 0.1);
+  border-image: linear-gradient(45deg, #c4d600, #8fc400) 1;
+}
+
+.reason-card:hover {
+  /* transform: translateY(-10px); */
+  box-shadow: 0 0 20px rgba(196, 214, 0, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.reason-icon {
+  font-size: 40px;
+  color: #c4d600;
+  margin-bottom: 20px;
+}
+
+.reason-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+.reason-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Swiper Mobile Styles */
+@media screen and (max-width: 768px) {
+  .reason-grid {
+    display: none;
+  }
+  .reason-slider {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .reason-card {
+    height: 100%;
+    text-align: left;
+  }
+
+  .reason-title {
+    font-size: 1.1rem;
+  }
+}
