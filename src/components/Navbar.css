@@ -4,16 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
+
 .navbar {
   width: 100%;
+  height: auto;
   position: fixed;
   top: 0;
   z-index: 999;
   backdrop-filter: blur(5px);
-  background: rgba(0.1, 0.1, 0.1, 0.1); 
-  padding: 12px 32px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px 32px;
   transition: all 0.4s ease-in-out;
-  font-family: 'Poppins','arial', sans-serif;
 }
 
 .navbar.hidden {
@@ -41,6 +45,10 @@
   width: 200px;
   height: 48px;
   transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover img {
+  transform: scale(1.05);
 }
 
 .nav-links {
@@ -88,27 +96,39 @@
   z-index: 1001;
 }
 
-/* Mobile Styles */
 @media (max-width: 1024px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+
   .nav-links {
     position: absolute;
-    top: 70px;
-    right: 0;
-    flex-direction: column;
-    background: rgba(0, 0, 0, 0.92);
+    top: 100%;
+    left: 0;
     width: 100%;
-    text-align: center;
-    padding: 20px 0;
+    background-color: rgba(0, 0, 0, 0.96);
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
     display: none;
-    animation: fadeIn 0.4s ease forwards;
+    opacity: 0;
+    transform: translateY(-10px);
+    animation: fadeIn 0.4s forwards;
   }
 
   .nav-links.active {
     display: flex;
   }
 
-  .mobile-menu-icon {
-    display: block;
+  .nav-item {
+    font-size: 1.2rem;
+    padding: 8px 0;
+  }
+
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -118,6 +138,37 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 580px) {
+  .navbar-logo img {
+   width: 160px;
+   height: 40px;
+   transition: transform 0.3s ease;
+  }
+
+  .navbar {
+  width: 100%;
+  backdrop-filter: blur(8px);
+  background: none;
+  padding: 0px 20px;
+  transition: all 0.4s ease-in-out;
+}
+}
+
+@media (max-width: 400px) {
+  .navbar-logo img {
+   width: 140px;
+   height: 35px;
+   transition: transform 0.3s ease;
+  }
 }

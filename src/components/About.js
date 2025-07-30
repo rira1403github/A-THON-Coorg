@@ -42,7 +42,7 @@ const AboutUs = () => {
             Here’s what makes<br />
             <span className="highlight">A-THON ALLTERRAIN</span>
             <div className="underline" />
-            {/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/}perfect for you!
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perfect for you!
           </h2>
         </div>
         <div className="about-description-container">

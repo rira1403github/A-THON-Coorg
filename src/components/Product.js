@@ -38,7 +38,7 @@ const Product = () => {
           return prev;
         }
       });
-    }, 100);
+    }, 60);
 
     return () => {
       clearInterval(interval1);
@@ -54,7 +54,6 @@ const Product = () => {
         data-aos="fade-up"
       >
         <div className="drivetrain-buttons">
-          <button>AWD</button>
           <button>2WD</button>
           <button>4WD</button>
           <button>DIFF. LOCK</button>
@@ -96,7 +95,6 @@ const Product = () => {
         data-aos="fade-up"
       >
         <div className="drivetrain-buttons reversed-buttons" style={{ transform: 'scaleX(-1)' }}>
-          <button>AWD</button>
           <button>2WD</button>
           <button>4WD</button>
           <button>DIFF. LOCK</button>
@@ -117,7 +115,7 @@ const Product = () => {
           </div>
         </div>
 
-        <div className="reversed-know-more" data-aos="zoom-in" data-aos-delay="300" style={{ transform: 'scaleX(-1)' }}>
+        <div className="reversed-know-more" style={{ transform: 'scaleX(-1)' }}>
           <a
             href="/ASHV-4S.pdf"
             download="ASHVA-4S-Brochure"
@@ -127,7 +125,7 @@ const Product = () => {
           </a>
         </div>
         <div className='reversed-ashva-title'>
-           <img src={ashvaTitle2} alt="ASHVA SERIES" className="ashva-title-img2" data-aos="fade" style={{ transform: 'scaleX(-1)' }}/>
+           <img src={ashvaTitle2} alt="ASHVA SERIES" className="ashva-title-img2" style={{ transform: 'scaleX(-1)' }}/>
         </div>
       </div>
     </>

@@ -13,6 +13,7 @@ import Footer from './components/footer';
 import Collaborators from './components/Collaborator';
 import Dealer from './components/Dealer';
 import Testinomial from './components/Testinomial';
+import FrameGallery from './components/FrameGallery';
 
 function App() {
   useEffect(() => {
@@ -30,15 +31,15 @@ function App() {
               <section id="hero">
                 <Hero />
               </section>
-              <section id="about">
-                <About />
+               <section id="frameGallery">
+                <FrameGallery />
               </section>
               <section id="product">
                 <Product />
               </section>
-              {/* <section id="carproduct">
-                <CarProduct />
-              </section> */}
+              <section id="about">
+                <About />
+              </section>
               <section id="Reason">
                 <Reason />
               </section>

@@ -89,7 +89,27 @@
   }
 
   .slide img {
-    height: 70px;
+    height: 55px;
     width: 150px;
+  }
+
+  .slide {
+  width: 180px;
+}
+
+.slider {
+  padding: 0px 0;
+}
+}
+
+
+@media (max-width: 380px) {
+  .slide {
+   width: 160px;
+  }
+
+  .slide img {
+    height: 45px;
+    width: 130px;
   }
 }

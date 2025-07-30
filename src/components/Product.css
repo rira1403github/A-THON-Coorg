@@ -192,7 +192,7 @@
   }
 }
 
-@media (max-width: 868px) {
+@media (max-width: 768px) {
   .product-section {
     height: 80vh;
     padding: 1.5rem;
@@ -206,7 +206,7 @@
   }
 
   .drivetrain-buttons {
-     flex-direction: row;
+    flex-direction: row;
     top: 1rem;
     right: 1rem;
     gap: 0.5rem;
@@ -265,6 +265,4 @@
   .spec-value {
     font-size: 1.6rem;
   }
-
-  
 } 

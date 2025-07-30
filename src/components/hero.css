@@ -187,18 +187,38 @@
   .hero-slide {
     background-size: cover;
     zoom: 0.3;
-    height: 125vh;
+    height: 135vh;
   }
 
   .hero-heading {
-    font-size: 3rem;
+    font-size: 4rem;
     margin-left: 10px;
     width: 100%;
   }
 
   .hero-head-typewriter {
-    font-size: 2.3rem;
+    font-size: 3rem;
     margin-left: 10px;
     width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+ 
+  .hero-slide {
+    background-size: cover;
+    zoom: 0.4;
+    height: 135vh;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+    margin-left: 10px;
+  }
+
+  .hero-head-typewriter {
+    font-size: 2rem;
+    margin-left: 8px;
+  }
+}
+
