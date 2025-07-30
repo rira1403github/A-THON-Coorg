@@ -6,46 +6,22 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Typewriter from 'typewriter-effect';
 import './hero.css';
-import img1 from '../assets/coorg1.jpeg';
-import img2 from '../assets/coorg2.jpeg';
-import img3 from '../assets/coorg3.jpeg';
-import img4 from '../assets/coorg4.jpeg';
+import img1 from '../assets/Hero-main.png';
 
 const heroData = [
-  { image: img1, text: "Experience Coorg Like Never Before" },
-  { image: img2, text: "Thrilling Off-Road Adventures Await" },
-  { image: img3, text: "Explore the Untamed Trails" },
-  { image: img4, text: "Drive Through Nature’s Heart" },
+  { image: img1, text: "Experience Coorg Like Never Before." },
 ];
-
-const scrollToSection = (id) => {
-  const section = document.getElementById(id);
-  if (section) {
-    section.scrollIntoView({ behavior: 'smooth' });
-  }
-};
 
 const Hero = () => {
   return (
     <div className="hero-slider">
-      {/* <div className="vertical-nav">
-        {[1, 2, 3, 4].map((n, i) => (
-          <div
-            key={i}
-            className="nav-dot"
-            onClick={() => scrollToSection(`section-${n}`)}
-          >
-            0{n}
-          </div>
-        ))}
-      </div> */}
-
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
+        modules={[Navigation, Pagination, Autoplay
+        ]}
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 6000 }}
+        autoplay={{ delay: 1000 }}
         navigation
         pagination={{ clickable: true }}
       >
@@ -53,45 +29,42 @@ const Hero = () => {
           <SwiperSlide key={index}>
             <div
               className="hero-slide"
-              style={{ backgroundImage: `url(${item.image})` }}
+              style={{ backgroundImage: `url(${img1})`, transform: 'scaleX(-1)' }}
             >
               <div className="hero-blur-overlay"></div>
               <div className="hero-dark-overlay"></div>
               <div className="hero-overlay">
-                <h1 className="hero-heading">ADVENTURE</h1>
-                <p className="hero-subtitle">
+                <h1 className="hero-heading">INTRODUCING ASHVA</h1>
+                <h1 className="hero-head-typewriter">
+                  <Typewriter
+                    options={{
+                      strings: ['Bold. Tough. Unstoppable.'],
+                      autoStart: true,
+                      loop: true,
+                      delay: 120,
+                      deleteSpeed: 50,
+                      pauseFor: 5000,
+                    }}
+                  />
+                </h1>
+
+                {/* <p className="hero-subtitle">
                   Create Your Outdoor Adventure. Discover With Us.
-                </p>
-                <h2 className="hero-typewriter">
+                </p> */}
+
+                {/* <h2 className="hero-typewriter">
                   <Typewriter
                     options={{
                       strings: [item.text],
                       autoStart: true,
                       loop: true,
                       delay: 50,
-                      deleteSpeed: 50,
-                      pauseFor: 4000,
+                      deleteSpeed: 20,
+                      pauseFor: 2500,
                     }}
                   />
-                </h2>
+                </h2> */}
               </div>
-
-              {/* <div className="bottom-labels">
-                {[
-                  "Be yourself with new emotion",
-                  "Create Your Outdoor Adventure. Discover With Us.",
-                  "Be yourself with new emotion",
-                  "With new emotion. Be yourself",
-                ].map((text, i) => (
-                  <div
-                    key={i}
-                    className={`label-item ${i === 0 ? 'active-label' : ''}`}
-                  >
-                    <span className="dot"></span>
-                    <p>{text}</p>
-                  </div>
-                ))}
-              </div> */}
             </div>
           </SwiperSlide>
         ))}

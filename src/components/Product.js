@@ -1,52 +1,137 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Product.css';
-import car1 from '../assets/coorg1.jpeg';
-import car2 from '../assets/coorg2.jpeg';
-import car3 from '../assets/coorg3.jpeg';
-import car4 from '../assets/coorg4.jpeg';
+import productBg from '../assets/Hero-img.png';
+import secondProductBg from '../assets/Ashva-4s.png';
+import ashvaTitle from '../assets/Ashva-text.png';
+import ashvaTitle2 from '../assets/Ashva-4s-text.png';
 
-const carData = [
-  {
-    img: car1,
-    title: 'Ashva 4x4',
-    desc: 'Ultimate off-road experience with advanced suspension.',
-  },
-  {
-    img: car2,
-    title: 'TrailBlazer X',
-    desc: 'Tame wild terrain with rugged performance and control.',
-  },
-  {
-    img: car3,
-    title: 'Beast Rider',
-    desc: 'Massive torque with desert rally capability.',
-  },
-  {
-    img: car4,
-    title: 'Nomad Cruiser',
-    desc: 'Luxury meets dirt track in this all-terrain beast.',
-  },
-];
+const Product = () => {
+  const [specs1, setSpecs1] = useState({ cc: 0, nm: 0, hp: 0 });
+  const [specs2, setSpecs2] = useState({ cc: 0, nm: 0, hp: 0 });
 
-const CarProducts = () => {
+  useEffect(() => {
+    const interval1 = setInterval(() => {
+      setSpecs1(prev => {
+        if (prev.cc < 976) {
+          return {
+            cc: Math.min(prev.cc + 5, 976),
+            nm: Math.min(prev.nm + 1, 84),
+            hp: Math.min(prev.hp + 1, 101),
+          };
+        } else {
+          clearInterval(interval1);
+          return prev;
+        }
+      });
+    }, 50);
+
+    const interval2 = setInterval(() => {
+      setSpecs2(prev => {
+        if (prev.cc < 976) {
+          return {
+            cc: Math.min(prev.cc + 5, 976),
+            nm: Math.min(prev.nm + 1, 84),
+            hp: Math.min(prev.hp + 1, 101),
+          };
+        } else {
+          clearInterval(interval2);
+          return prev;
+        }
+      });
+    }, 100);
+
+    return () => {
+      clearInterval(interval1);
+      clearInterval(interval2);
+    };
+  }, []);
+
   return (
-    <section className="car-products-section">
-      <h2 className="section-title">Our Off-Road Lineup</h2>
-      <p className="section-subtitle">Engineered for performance in every terrain</p>
-      
-      <div className="car-grid">
-        {carData.map((car, index) => (
-          <div className="car-card" key={index} data-aos="fade-up">
-            <img src={car.img} alt={car.title} className="car-image" />
-            <div className="car-info">
-              <h3>{car.title}</h3>
-              <p>{car.desc}</p>
-            </div>
+    <>
+      <div
+        className="product-section"
+        style={{ backgroundImage: `url(${productBg})` }}
+        data-aos="fade-up"
+      >
+        <div className="drivetrain-buttons">
+          <button>AWD</button>
+          <button>2WD</button>
+          <button>4WD</button>
+          <button>DIFF. LOCK</button>
+        </div>
+
+        <div className="spec-boxes">
+          <div className="spec-item" data-aos="zoom-in">
+            <p className="spec-value">{specs1.cc}<span className="unit"> CC</span></p>
+            <p>4 STROKE V-TWIN</p>
           </div>
-        ))}
+          <div className="spec-item" data-aos="zoom-in" data-aos-delay="100">
+            <p className="spec-value">{specs1.nm}<span className="unit"> NM</span></p>
+            <p>@ 5500 RPM</p>
+          </div>
+          <div className="spec-item" data-aos="zoom-in" data-aos-delay="200">
+            <p className="spec-value">{specs1.hp}<span className="unit"> HP</span></p>
+            <p>@ 6500 RPM</p>
+          </div>
+        </div>
+
+        <div className="know-more" data-aos="zoom-in" data-aos-delay="300">
+          <a
+            href="/ASHVA-4X4.pdf"
+            download="ASHVA-4X4-Brochure"
+            className="know-more-button"
+          >
+            BROCHURE
+          </a>
+        </div>
+        <div className='ashva-title'>
+        <img src={ashvaTitle} alt="ASHVA 4X4" className="ashva-title-img" data-aos="fade" />
+        </div>
+
       </div>
-    </section>
+
+      <div
+        className="product-section reversed"
+        style={{ backgroundImage: `url(${secondProductBg})`, transform: 'scaleX(-1)' }}
+        data-aos="fade-up"
+      >
+        <div className="drivetrain-buttons reversed-buttons" style={{ transform: 'scaleX(-1)' }}>
+          <button>AWD</button>
+          <button>2WD</button>
+          <button>4WD</button>
+          <button>DIFF. LOCK</button>
+        </div>
+
+        <div className="spec-boxes reversed-specs" style={{ transform: 'scaleX(-1)', color: 'white' }}>
+          <div className="spec-item" data-aos="zoom-in">
+            <p className="spec-value">{specs2.cc}<span className="unit"> CC</span></p>
+            <p>4 STROKE INLINE-4</p>
+          </div>
+          <div className="spec-item" data-aos="zoom-in" data-aos-delay="100">
+            <p className="spec-value">{specs2.nm}<span className="unit"> NM</span></p>
+            <p>@ 5200 RPM</p>
+          </div>
+          <div className="spec-item" data-aos="zoom-in" data-aos-delay="200">
+            <p className="spec-value">{specs2.hp}<span className="unit"> HP</span></p>
+            <p>@ 6300 RPM</p>
+          </div>
+        </div>
+
+        <div className="reversed-know-more" data-aos="zoom-in" data-aos-delay="300" style={{ transform: 'scaleX(-1)' }}>
+          <a
+            href="/ASHV-4S.pdf"
+            download="ASHVA-4S-Brochure"
+            className="reversed-know-more-button"
+          >
+            BROCHURE
+          </a>
+        </div>
+        <div className='reversed-ashva-title'>
+           <img src={ashvaTitle2} alt="ASHVA SERIES" className="ashva-title-img2" data-aos="fade" style={{ transform: 'scaleX(-1)' }}/>
+        </div>
+      </div>
+    </>
   );
 };
 
-export default CarProducts;
+export default Product;

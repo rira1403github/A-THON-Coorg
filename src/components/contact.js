@@ -14,23 +14,22 @@ const Contact = () => {
       <div className="contact-container" data-aos="fade-up">
         <div className="contact-info">
           <h3>Telephone</h3>
-          <p><FaPhoneAlt /> (+84)-1800-33358</p>
+          <p><FaPhoneAlt /> (+91) &nbsp;9740025534</p>
 
           <h3>Location</h3>
           <p><FaMapMarkerAlt /> BENGALURU, KA</p>
 
           <h3>Email</h3>
-          <p><FaEnvelope /> atp@a-thonallterrain.com</p>
+          <p><FaEnvelope /> sales@a-thonallterrain.com</p>
         </div>
 
         <div className="contact-divider"></div>
 
         <div className="contact-form">
-          <h2>Send Us a Message</h2>
+          <h2>GET A QUOTE</h2>
           <form>
             <div className="input-row">
               <input type="text" placeholder="Full Name" required />
-              <input type="text" placeholder="Company Name" />
             </div>
             <div className="input-row">
               <input type="email" placeholder="Email Address" required />

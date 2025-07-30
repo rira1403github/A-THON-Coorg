@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
 .hero-slider {
   width: 100%;
-  height: 100vh;
   position: relative;
   overflow: hidden;
+  font-family: 'Poppins','arial', sans-serif;
 }
 
 .hero-slide {
@@ -11,52 +13,47 @@
   background-size: cover;
   background-position: center;
   position: relative;
-  animation: zoomIn 10s ease-in infinite;
+  animation: zoomIn 10s ease-in-out infinite;
 }
 
 .hero-blur-overlay {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px);
-  background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
-}
-
-.hero-dark-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.8));
-  z-index: 2;
 }
 
 .hero-overlay {
   position: absolute;
   z-index: 3;
-  width: 100%;
+  width: 73%;
   top: 30%;
-  text-align: center;
-  color: white;
+  text-align: left;
+  color: white; 
   padding: 0 20px;
   animation: fadeInUp 1.5s ease-in-out;
 }
 
 .hero-heading {
-  font-size: 7rem;
+  position: relative;
+  top: 15rem;
+  font-size: 4rem;
   font-weight: 800;
   letter-spacing: 5px;
+  text-align: left;
+  margin-left: 1rem;
 }
 
-.hero-subtitle {
-  margin-top: 10px;
-  font-size: 1.2rem;
-  font-weight: 300;
-  color: #ddd;
+.hero-head-typewriter {
+  position: relative;
+  top: 15rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .hero-typewriter {
@@ -64,6 +61,8 @@
   font-size: 1.4rem;
   font-weight: 400;
   color: #fff;
+  text-align: left;
+  margin-left: 1rem;
 }
 
 .vertical-nav {
@@ -78,10 +77,6 @@
   font-weight: 500;
   color: white;
   cursor: pointer;
-}
-
-.nav-dot:hover {
-  color: yellow;
 }
 
 .bottom-labels {
@@ -114,10 +109,6 @@
   margin-bottom: 8px;
 }
 
-.active-label .dot {
-  background-color: yellow;
-}
-
 .active-label p {
   color: #fff;
   font-weight: 600;
@@ -139,7 +130,6 @@
   opacity: 1;
 }
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -163,21 +153,21 @@
   }
 }
 
-/* Responsive */
-@media (max-width: 768px) {
+/* MEDIA QUERIES FIX */
+@media (max-width: 850px) {
 
-  .hero-slider {
-  height: 80vh;
+  .hero-slide {
+    background-repeat: no-repeat;
+    background-position: center center;
+    zoom: 0.5;
+    height: 110vh;
   }
 
   .hero-heading {
-    font-size: 3rem;
+    font-size: 5rem;
   }
-
-  .hero-subtitle,
-  .hero-typewriter {
-    font-size: 1rem;
-    padding: 0 10px;
+  .hero-head-typewriter {
+    font-size: 3rem;
   }
 
   .vertical-nav {
@@ -189,5 +179,26 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+ 
+  .hero-slide {
+    background-size: cover;
+    zoom: 0.3;
+    height: 125vh;
+  }
+
+  .hero-heading {
+    font-size: 3rem;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .hero-head-typewriter {
+    font-size: 2.3rem;
+    margin-left: 10px;
+    width: 100%;
   }
 }

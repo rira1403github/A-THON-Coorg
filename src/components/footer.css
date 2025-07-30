@@ -1,12 +1,23 @@
 .footer-section {
   background-color: black;
   color: white;
-  padding: 60px 30px 40px;
-  font-family: 'Helvetica Neue', sans-serif;
+  padding: 20px 30px 20px 30px;
+  font-family: 'Poppins','arial', sans-serif;
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
-  text-align: justify;
+  text-align: center;
+  align-items: center;
+ }
+
+.footer-top h2 {
+  font-size: 2rem;
+  font-weight: 350;
+  justify-content: space-between;
+  animation: fadeIn 1.5s ease-in-out;
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
 }
 
 .social-footer {
@@ -21,6 +32,7 @@
 .social-item {
   display: flex;
   align-items: center;
+  text-decoration: none;
   gap: 10px;
   font-weight: 600;
   color: white;
@@ -30,7 +42,7 @@
 }
 
 .social-item:hover {
-  color: yellow;
+  color: #3b8132;
   font-size: 15px;
 }
 
@@ -44,6 +56,7 @@
 .footer-links {
   display: flex;
   justify-content: center;
+  text-decoration: none;
   flex-wrap: wrap;
   gap: 30px;
   font-weight: bold;
@@ -82,6 +95,11 @@
     overflow: hidden;
   }
 
+  .footer-top h2 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+
   .footer-col-links.open {
     max-height: 1000px;
   }
@@ -98,5 +116,10 @@
   .footer-col-links.open {
     max-height: 1000px;
   }
+
+  .footer-top h2 {
+  font-size: 1.2rem;
+  font-weight: 200;
+}
 }
 

@@ -10,10 +10,13 @@ import Hero from './components/hero';
 import Product from './components/Product'; 
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Collaborators from './components/Collaborator';
+import Dealer from './components/Dealer';
+import Testinomial from './components/Testinomial';
 
 function App() {
   useEffect(() => {
-    AOS.init({ duration: 800, once: true });
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
@@ -30,14 +33,26 @@ function App() {
               <section id="about">
                 <About />
               </section>
-              <section id="Reason">
-                <Reason />
-              </section>
               <section id="product">
                 <Product />
               </section>
+              {/* <section id="carproduct">
+                <CarProduct />
+              </section> */}
+              <section id="Reason">
+                <Reason />
+              </section>
               <section id="contact">
                 <Contact />
+              </section>
+              <section id="Testinomial">
+                <Testinomial />
+              </section>
+              <section id="Collaborators">
+                <Collaborators />
+              </section>
+              <section id="Dealer">
+                <Dealer />
               </section>
               <Footer />
             </>

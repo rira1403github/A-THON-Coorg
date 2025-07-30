@@ -27,31 +27,31 @@ const Navbar = () => {
     <nav className={`navbar ${visible ? '' : 'hidden'}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
-          <img src="/logo512.svg" alt="Logo" />
-          <span className="logo-title">
+          <img src="/Logo-Athon.png" alt="Logo" />
+          {/* <span className="logo-title">
             A-THON<br /><small>ALLTERRAIN PRIVATE LIMITED</small>
-          </span>
+          </span> */}
         </div>
 
         <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
           <li>
             <Link to="hero" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
-              Adventure
+              HOME
             </Link>
           </li>
           <li>
             <Link to="about" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
-              About
+              ABOUT US
             </Link>
           </li>
           <li>
             <Link to="product" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
-              Product
+              PRODUCT
             </Link>
           </li>
           <li>
             <Link to="contact" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
-              Contact Us
+              CONTACT US
             </Link>
           </li>
         </ul>

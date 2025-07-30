@@ -1,80 +1,270 @@
-.car-products-section {
-  background: #0e1a1f;
-  color: white;
-  padding: 60px 20px;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap');
+
+.product-section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  color: #f9f8f9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center; 
+  padding: 2rem;
+  font-family: 'Orbitron', 'Arial', sans-serif;
+}
+
+.reversed .background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+
+.drivetrain-buttons {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.drivetrain-buttons button {
+  background: #161616;
+  color: #f9f8f5;
+  border: none;
+  border-radius: 6px;
+  width: 80px;
+  height: 80px;
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+.drivetrain-buttons button:hover {
+  transform: scale(1.12);
+  background-color: #000;
+}
+
+.know-more {
+  margin: 2rem 0;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.know-more-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #161616;
+  color: #f9f8f5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  text-decoration: none;
+  animation: fadeUp 1s ease-in-out; 
+}
+
+.know-more-button:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+
+.reversed-know-more {
+  margin: 2rem 0;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  z-index: 10;
+}
+
+.reversed-know-more-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #161616;
+  color: #f9f8f5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  text-decoration: none;
+  animation: fadeUp 1s ease-in-out; 
+}
+
+.reversed-know-more-button:hover {
+  background-color: #000;
+  transform: scale(1.05);
+}
+
+.spec-boxes {
+  position: absolute;
+  color: #000;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  z-index: 10;
+  backdrop-filter: blur(5px);
+  background: rgba(0.1, 0.1, 0.1, 0.1); 
+  border-radius: 12px;
+  padding: 10px;
+}
+
+.spec-item {
   text-align: center;
 }
 
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #ffffff;
+.spec-value {
+  font-size: 2.5rem;
+  font-weight: 400;
 }
 
-.section-subtitle {
-  color: #c4c4c4;
-  margin-bottom: 40px;
-  font-size: 16px;
+.unit {
+  font-size: 0.5em;
+  margin-left: 4px;
+  opacity: 0.8;
 }
 
-.car-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  justify-items: center;
+.ashva-title {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
 }
 
-.car-card {
-  position: relative;
-  border-radius: 12px;
-  overflow: hidden;
-  background: #1a1a1a;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
+.ashva-title-img {
+  width: 475px;
+  height: 125px;
+  animation: fadeIn 2s ease-in-out;
 }
 
-.car-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 36px rgba(0,0,0,0.5);
+.reversed-ashva-title {
+  position: absolute;
+  bottom: 4rem;
+  left: 2rem;
+  display: flex;
+  flex-direction: row;
+  z-index: 10;
 }
 
-.car-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  filter: brightness(0.9);
+.ashva-title-img2 {
+  width: 400px;
+  height: 50px;
+  animation: fadeIn 2s ease-in-out;
 }
 
-.car-info {
-  padding: 16px;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
-}
-
-.car-info h3 {
-  font-size: 20px;
-  margin: 0;
-  color: #ffe600;
-}
-
-.car-info p {
-  font-size: 14px;
-  color: #ccc;
-  margin-top: 5px;
-}
-
-/* Mobile Responsive */
-@media (max-width: 768px) {
-  .car-info h3 {
-    font-size: 18px;
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
   }
-
-  .car-info p {
-    font-size: 13px;
-  }
-
-  .car-image {
-    height: 160px;
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
+
+@media (max-width: 868px) {
+  .product-section {
+    height: 80vh;
+    padding: 1.5rem;
+    zoom: 0.6;
+  }
+
+  .spec-boxes {
+    flex-direction: column;
+    left: 1rem;
+    gap: 1rem;
+  }
+
+  .drivetrain-buttons {
+     flex-direction: row;
+    top: 1rem;
+    right: 1rem;
+    gap: 0.5rem;
+  }
+
+  .reversed .drivetrain-buttons {
+    flex-direction: column;
+    left: 1rem;
+    right: auto;
+  }
+
+  .reversed .spec-boxes {
+    right: 1rem;
+    left: auto;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .spec-value {
+    font-size: 1.8rem;
+  }
+
+.know-more-button, .reversed-know-more-button {
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+}
+
+@media (max-width: 480px) {
+  .product-section {
+    height: 70vh;
+    padding: 1rem;
+    width: 100%;
+    zoom: 0.4;
+  }
+
+  .drivetrain-buttons {
+    flex-direction: row;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  .reversed .drivetrain-buttons {
+    flex-direction: column;
+    left: 1rem;
+    right: auto;
+  }
+
+  .drivetrain-buttons button {
+    width: 80px;
+    height: 80px;
+    font-size: 16px;
+  }
+
+  .spec-value {
+    font-size: 1.6rem;
+  }
+
+  
+} 

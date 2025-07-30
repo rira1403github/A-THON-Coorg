@@ -1,59 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
 .about-us-section {
-  background: #0e1a1f;
+  background: #161616;
   color: #fff;
-  padding: 80px 20px;
+  padding: 100px 20px;
+  font-family: 'Poppins', 'Arial', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: justify;
 }
 
 .about-content {
-  max-width: 720px;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
   animation: fadeInUp 1s ease forwards;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.about-title-container,
+.about-description-container {
+  flex: 1 1 400px;
 }
 
 .about-title {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 700;
   margin-bottom: 16px;
   position: relative;
-  color: #fff;
+  color: #f9f8f5;
 }
 
 .highlight {
-  color: #ffe600;
+  color: #3b8132;
 }
 
 .underline {
   width: 60px;
   height: 3px;
-  background: #ffe600;
+  background: #3b8132;
   margin-top: 10px;
 }
 
 .about-description {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.8;
   color: #cfcfcf;
+  padding-top: 10px;
 }
 
-/* Responsive */
+/* Tablet */
 @media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    padding: 0 1rem;
+    gap: 1rem;
+  }
+
+  .about-us-section {
+  padding: 40px 20px;
+  font-family: 'Poppins', 'Arial', sans-serif;
+}
+
   .about-title {
-    font-size: 24px;
+    font-size: 28px;
+    text-align: left;
   }
 
   .about-description {
-    font-size: 15px;
+    font-size: 16px;
+    text-align: justify;
   }
 
   .underline {
     width: 40px;
+    margin: 10px auto;
+  }
+
+  .about-title-container, .about-description-container {
+    text-align: left;
+    flex: 1 1 100px;
   }
 }
 
-/* Optional keyframe if not using AOS */
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 22px;
+  }
+
+  .about-description {
+    font-size: 14px;
+  }
+}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

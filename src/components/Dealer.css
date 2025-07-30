@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+.dealer-section {
+  background-color: #121212;
+  color: white;
+  padding: 2rem 2rem 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.dealer-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.dealer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.dealer-logo {
+  max-width: 150px;
+  height: auto;
+  transition: transform 0.4s ease;
+}
+
+.dealer-logo:hover {
+  transform: scale(1.1);
+}
+
+.dealer-details {
+  text-align: left;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dealer-details h2 {
+  font-size: 1.6rem;
+  font-family: 'Orbitron', 'Arial', sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.location-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.location-icon {
+  color: #f44336;
+  font-size: 1.2rem;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.location-wrapper p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .dealer-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .dealer-details {
+    text-align: center;
+    align-items: center;
+  }
+
+  .dealer-details h2 {
+    font-size: 1.4rem;
+  }
+
+  .location-wrapper {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .location-wrapper p {
+    font-size: 0.95rem;
+  }
+}

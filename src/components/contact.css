@@ -2,7 +2,7 @@
   padding: 60px 20px;
   background: #121212;
   color: #fff;
-  font-family: 'Jost', sans-serif;
+  font-family: 'Poppins','arial', sans-serif;
 }
 
 .contact-container {
@@ -78,11 +78,11 @@ input, textarea {
 }
 
 input:focus, textarea:focus {
-  border-color: #ffe600;
+  border-color: #3b8132;
 }
 
 .submit-btn {
-  background-color: #ffe600;
+  background-color: #3b8132;
   margin-top: 20px;
   color: #000;
   padding: 12px 24px;
@@ -95,7 +95,7 @@ input:focus, textarea:focus {
 }
 
 .submit-btn:hover {
-  background-color: #fff000;
+  background-color: #369d29;
   transform: scale(1.05);
 }
 
