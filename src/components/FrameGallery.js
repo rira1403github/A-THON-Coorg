@@ -13,17 +13,17 @@ const frameData = [
   {
     image: img1,
     heading: 'BOLD CAPABILITY. SUBTLE SOPHISTICATION.',
-    description: `With ASHVA 4X4 XTR’s double wishbone suspension, every ride is smooth—whether you're blazing rugged trails or gliding through the city, comfort and control come standard, so you’re always ready for the next adventure.`,
+    description: `ASHVA 4X4 XTR blurs the line between power and adventure, tearing through the wild while hauling a full trailer—no limits, just relentless momentum.`,
   },
   {
     image: img2,
     heading: 'MADE FOR THE HARSHEST PATHS',
-    description: `From Mud And Rocky Ascents To Rivers And Dunes. Conquer It All`,
+    description: `With ASHVA 4X4 XTR’s double wishbone suspension, every ride is smooth—whether you're blazing rugged trails or gliding through the city, comfort and control come standard, so you’re always ready for the next adventure.`,
   },
   {
     image: img3,
     heading: 'ENGINEERED FOR UTILITY WITH 4 OCCUPANTS',
-    description: `ASHVA 4X4 XTR blurs the line between power and adventure, tearing through the wild while hauling a full trailer—no limits, just relentless momentum.`,
+    description: `The ASHVA 4S stands apart as a true adventure machine built not just for thrilling solo rides, but for unforgettable shared experiences.`,
   },
 ];
 

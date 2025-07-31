@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { FiMenu, FiX } from 'react-icons/fi';
@@ -10,6 +9,7 @@ const Navbar = () => {
   const [visible, setVisible] = useState(true);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+  const closeMobileMenu = () => setMobileMenuOpen(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,36 +21,59 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [prevScrollPos]);
 
-  const closeMobileMenu = () => setMobileMenuOpen(false);
-
   return (
     <nav className={`navbar ${visible ? '' : 'hidden'}`}>
       <div className="navbar-container">
         <div className="navbar-logo">
           <img src="/Logo-Athon.png" alt="Logo" />
-          {/* <span className="logo-title">
-            A-THON<br /><small>ALLTERRAIN PRIVATE LIMITED</small>
-          </span> */}
         </div>
 
         <ul className={`nav-links ${mobileMenuOpen ? 'active' : ''}`}>
           <li>
-            <Link to="hero" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
+            <Link
+              to="hero"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="nav-item"
+              onClick={closeMobileMenu}
+            >
               HOME
             </Link>
           </li>
           <li>
-            <Link to="about" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="nav-item"
+              onClick={closeMobileMenu}
+            >
               ABOUT US
             </Link>
           </li>
           <li>
-            <Link to="product" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
+            <Link
+              to="product"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="nav-item"
+              onClick={closeMobileMenu}
+            >
               PRODUCT
             </Link>
           </li>
           <li>
-            <Link to="contact" smooth={true} duration={500} offset={-70} className="nav-item" onClick={closeMobileMenu}>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className="nav-item"
+              onClick={closeMobileMenu}
+            >
               CONTACT US
             </Link>
           </li>

@@ -10,7 +10,6 @@ body {
 
 .navbar {
   width: 100%;
-  height: auto;
   position: fixed;
   top: 0;
   z-index: 999;
@@ -18,7 +17,6 @@ body {
   background: rgba(0, 0, 0, 0.6);
   padding: 10px 32px;
   transition: all 0.4s ease-in-out;
-  overflow: hidden;
 }
 
 .navbar.hidden {
@@ -111,15 +109,15 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    padding: 24px 0;
-    display: none;
-    opacity: 0;
-    transform: translateY(-10px);
-    animation: fadeIn 0.4s forwards;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
   }
 
   .nav-links.active {
-    display: flex;
+    padding: 24px 0;
+    max-height: 400px;
   }
 
   .nav-item {
@@ -138,38 +136,22 @@ body {
   to { width: 100%; }
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
 @media (max-width: 580px) {
   .navbar-logo img {
-   width: 160px;
-   height: 40px;
-   transition: transform 0.3s ease;
+    width: 160px;
+    height: 40px;
   }
 
   .navbar {
-  width: 100%;
-  backdrop-filter: blur(8px);
-  background: none;
-  padding: 0px 20px;
-  transition: all 0.4s ease-in-out;
-}
+    padding: 6px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+  }
 }
 
 @media (max-width: 400px) {
   .navbar-logo img {
-   width: 140px;
-   height: 35px;
-   transition: transform 0.3s ease;
+    width: 140px;
+    height: 35px;
   }
 }
