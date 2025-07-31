@@ -100,7 +100,6 @@ input:focus, textarea:focus {
   transform: scale(1.05);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
@@ -117,5 +116,15 @@ input:focus, textarea:focus {
 
   .submit-btn {
     width: 100%;
+  }
+}
+
+@media (max-width: 580px) {
+  input, textarea {
+  width: 95%;
+}
+
+.submit-btn {
+    width: 95%;
   }
 }

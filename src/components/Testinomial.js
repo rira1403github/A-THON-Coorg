@@ -31,25 +31,25 @@ const Testimonial = () => {
       >
         <SwiperSlide>
           <div className="testimonial-slide">
-            <div className="testimonial-text">
-              "I am still processing what I’ve experienced! I am just loss of thoughts, it’s unbelievable what I’ve witnessed here. The vehicle was just gliding”
-              <br />
-              <span className="testimonial-author">– JEET TAPASWI</span>
-              <span className='testimonial-author-line'>FOUNDER OF TAPASWI RACING</span>
-            </div>
             <div className="testimonial-video">
               <video
                 width="100%"
                 height="100%"
                 autoPlay
-                muted
+                loop 
                 playsInline
-                //controls
+                controls
                 onEnded={handleVideoEnd}
               >
                 <source src="/videos/video1.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
+            </div>
+            <div className="testimonial-text">
+              "I am still processing what I’ve experienced! I am just loss of thoughts, it’s unbelievable what I’ve witnessed here. The vehicle was just gliding”
+              <br />
+              <span className="testimonial-author">– JEET TAPASWI</span>
+              <span className='testimonial-author-line'>FOUNDER OF TAPASWI RACING</span>
             </div>
           </div>
         </SwiperSlide>

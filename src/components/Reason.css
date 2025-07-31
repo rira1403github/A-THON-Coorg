@@ -98,6 +98,14 @@
   }
 }
 
+@media screen and (max-width: 580px) {
+
+  .reason-card {
+    height: max-content;
+    text-align: center;
+  }
+}
+
 @media screen and (max-width: 480px) {
 
   .reason-card {
@@ -106,18 +114,10 @@
   }
 }
 
-@media screen and (max-width: 430px) {
-
-  .reason-card {
-    height: 25vh;
-    text-align: center;
-  }
-}
-
 @media screen and (max-width: 400px) {
 
   .reason-card {
-    height: 30vh;
+    height: max-content;
     text-align: center;
   }
 }

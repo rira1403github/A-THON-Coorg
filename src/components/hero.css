@@ -97,7 +97,54 @@
   .hero-overlay {
     padding: 2rem 1rem;
   }
+
+  .hero-slide {
+    background-size: cover;
+    zoom: 0.5;
+    height: 155vh;
+  }
+
+  .hero-slider {
+    height: 155vh;
+  }
+
+  .hero-heading {
+    font-size: 4rem;
+  }
+
+  .hero-head-typewriter {
+    font-size: 1.8rem;
+  }
+
+   .hero-logo {
+    width: 800px;
+  }
 }
+
+
+@media (max-width: 580px) {
+  .hero-heading {
+    font-size: 4rem;
+  }
+
+  .hero-head-typewriter {
+    font-size: 1.8rem;
+  }
+
+   .hero-logo {
+    width: 900px;
+  }
+
+  .hero-slide {
+    background-size: cover;
+    zoom: 0.3;
+    height: 140vh;
+  }
+
+  .hero-slider {
+    height: 140vh;
+  }
+} 
 
 @media (max-width: 480px) {
   .hero-heading {

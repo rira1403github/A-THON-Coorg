@@ -100,14 +100,21 @@
   }
 }
 
-@media (max-width: 480px) {
+
+@media (max-width: 580px) {
   .frame-card {
-  height: 50vh;
+  height: max-content;
 }
 }
 
 @media (max-width: 480px) {
   .frame-card {
-  height: 55vh;
+  height: 51vh;
+}
+}
+
+@media (max-width: 400px) {
+  .frame-card {
+  height: max-content;
 }
 }
