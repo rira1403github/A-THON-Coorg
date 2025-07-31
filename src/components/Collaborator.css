@@ -28,15 +28,14 @@
 .slider {
   background-color: #f9f8f5;
   width: 100%;
-  padding: 10px 0;
   overflow: hidden;
   position: relative;
 }
 
 .slide-track {
   display: flex;
-  width: calc(250px * 16);
-  animation: scroll 40s linear infinite;
+  width: calc(250px * 20);
+  animation: scroll 25s linear infinite;
   animation-play-state: running;
 }
 
@@ -45,12 +44,10 @@
 }
 
 .slide {
-  width: 250px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -58,14 +55,14 @@
   display: inline-block;
 }
 
-.slide img {
-  height: 80px;
-  width: 150px;
-  transition: transform 0.3s ease;
+.slide:hover img {
+  transform: scale(0.9);
 }
 
-.slide:hover img {
-  transform: scale(1.1);
+.logo-img {
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  transform: scale(0.7)
 }
 
 @keyframes scroll {
@@ -73,43 +70,64 @@
   100% { transform: translateX(-50%); }
 }
 
-@media (max-width: 768px) {
-  .slide {
-    width: 180px;
+@media (max-width: 1024px) {
+  .logo-img {
+    transform: scale(0.9);
   }
 
-  .slide img {
-    height: 60px;
+   .slide:hover img {
+   transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    transform: scale(0.8);
+  }
+
+  .slide:hover img {
+   transform: scale(0.9);
+  }
+
+  .collab-heading {
+    font-size: 1.8rem;
   }
 }
 
 @media (max-width: 480px) {
-  .collab-heading {
-    font-size: 1.8rem;
+  .logo-img {
+    transform: scale(0.8);
   }
 
-  .slide img {
-    height: 55px;
-    width: 150px;
+  .slide:hover img {
+   transform: scale(0.9);
   }
 
   .slide {
-  width: 180px;
+    padding: 6px;
+  }
+
+  .slider {
+    padding: 0;
+  }
 }
 
-.slider {
-  padding: 0px 0;
-}
-}
+@media (max-width: 400px) {
+  .logo-img {
+    transform: scale(0.78);
+  }
 
+  .slide:hover img {
+   transform: scale(0.88);
+  }
+}
 
 @media (max-width: 380px) {
-  .slide {
-   width: 160px;
+  .logo-img {
+    transform: scale(0.6);
   }
 
-  .slide img {
-    height: 45px;
-    width: 130px;
+  .slide:hover img {
+   transform: scale(0.7);
   }
 }

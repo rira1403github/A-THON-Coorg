@@ -6,6 +6,7 @@
   padding: 2rem 2rem 4rem 2rem;
   font-family: 'Poppins', sans-serif;
   text-align: center;
+  overflow: hidden;
 }
 
 .dealer-title {

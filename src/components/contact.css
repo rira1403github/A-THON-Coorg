@@ -3,6 +3,7 @@
   background: #121212;
   color: #fff;
   font-family: 'Poppins','arial', sans-serif;
+  overflow: hidden;
 }
 
 .contact-container {

@@ -4,6 +4,7 @@
   padding: 60px 60px 20px;
   text-align: center;
   font-family: 'Poppins','arial', sans-serif;
+  overflow: hidden;
 }
 
 .reason-heading {
@@ -92,12 +93,32 @@
     margin-top: 50px;
   }
 
-  .reason-card {
-    height: 100%;
-    text-align: center;
-  }
-
   .reason-title {
     font-size: 1.1rem;
   }
 }
+
+@media screen and (max-width: 480px) {
+
+  .reason-card {
+    height: 22vh;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+
+  .reason-card {
+    height: 25vh;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .reason-card {
+    height: 30vh;
+    text-align: center;
+  }
+}
+

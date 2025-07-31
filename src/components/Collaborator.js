@@ -11,14 +11,14 @@ import logo7 from '../assets/C-image7.png';
 import logo8 from '../assets/C-image8.png';
 
 const logos = [
-  { img: logo1, link: 'https://www.artpark.in/' },
-  { img: logo2, link: 'https://twararobotics.in/' },
-  { img: logo3, link: 'https://www.comradoaerospace.com/' },
-  { img: logo4 },
-  { img: logo5, link: 'https://www.tssindia.in/' },
-  { img: logo6, link: 'https://cogostrucks.com/' },
-  { img: logo7, link: 'https://campcochocolates.com/' },
-  { img: logo8, link: 'https://precisionhubllc.com/' },
+  { img: logo1, link: 'https://www.artpark.in/', height: 65, width: 300 },
+  { img: logo2, link: 'https://twararobotics.in/', height: 60, width: 120 },
+  { img: logo3, link: 'https://www.comradoaerospace.com/', height: 40, width: 160 },
+  { img: logo4, height: 50, width: 130 },
+  { img: logo5, link: 'https://www.tssindia.in/', height: 85, width: 150 },
+  { img: logo6, link: 'https://cogostrucks.com/', height: 80, width: 185 },
+  { img: logo7, link: 'https://campcochocolates.com/', height: 90, width: 120 },
+  { img: logo8, link: 'https://precisionhubllc.com/', height: 120, width: 195 }
 ];
 
 const Collaborators = () => {
@@ -31,9 +31,29 @@ const Collaborators = () => {
         <div className="slide-track">
           {doubledLogos.map((logo, index) => (
             <div className="slide" key={index}>
-              <a href={logo.link} target="_blank" rel="noopener noreferrer">
-                <img src={logo.img} alt={`collab-${index}`} />
-              </a>
+              {logo.link ? (
+                <a href={logo.link} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={logo.img}
+                    alt={`collab-${index}`}
+                    className="logo-img"
+                    style={{
+                      height: `${logo.height}px`,
+                      width: `${logo.width}px`,
+                    }}
+                  />
+                </a>
+              ) : (
+                <img
+                  src={logo.img}
+                  alt={`collab-${index}`}
+                  className="logo-img"
+                  style={{
+                    height: `${logo.height}px`,
+                    width: `${logo.width}px`,
+                  }}
+                />
+              )}
             </div>
           ))}
         </div>

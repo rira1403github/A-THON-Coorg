@@ -13,7 +13,7 @@ const frameData = [
   {
     image: img1,
     heading: 'BOLD CAPABILITY. SUBTLE SOPHISTICATION.',
-    description: `Proving That True Off Road Capability Can Live In A Sanctuary Of Luxury, Premium Finishes, A Quiet Refined Ride And Sophisticated Details Throughout`,
+    description: `With ASHVA 4X4 XTR’s double wishbone suspension, every ride is smooth—whether you're blazing rugged trails or gliding through the city, comfort and control come standard, so you’re always ready for the next adventure.`,
   },
   {
     image: img2,
@@ -23,7 +23,7 @@ const frameData = [
   {
     image: img3,
     heading: 'ENGINEERED FOR UTILITY WITH 4 OCCUPANTS',
-    description: `Rugged Redesign For Four, While Keeping Its Brute Force Capability`,
+    description: `ASHVA 4X4 XTR blurs the line between power and adventure, tearing through the wild while hauling a full trailer—no limits, just relentless momentum.`,
   },
 ];
 
@@ -57,3 +57,4 @@ const FrameGallery = () => {
 };
 
 export default FrameGallery;
+

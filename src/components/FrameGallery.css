@@ -1,6 +1,7 @@
 .frame-gallery-section {
   background-color: #121212;
   padding: 40px 20px;
+  overflow: hidden;
 }
 
 .frame-swiper {
@@ -43,7 +44,6 @@
   }
 }
 
-/* For small screens: stacked layout */
 @media (max-width: 1023px) {
   .frame-image-container,
   .frame-text {
@@ -98,4 +98,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media (max-width: 480px) {
+  .frame-card {
+  height: 50vh;
+}
+}
+
+@media (max-width: 480px) {
+  .frame-card {
+  height: 55vh;
+}
 }
