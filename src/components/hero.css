@@ -125,6 +125,7 @@
 @media (max-width: 580px) {
   .hero-heading {
     font-size: 4rem;
+    background-color: red;
   }
 
   .hero-head-typewriter {
@@ -149,6 +150,7 @@
 @media (max-width: 480px) {
   .hero-heading {
     font-size: 4rem;
+    background-color: yellow;
   }
 
   .hero-head-typewriter {
@@ -181,16 +183,10 @@
 
   .hero-head-typewriter {
     font-size: 1.6rem;
+    background-color: black;
   }
 
   .hero-slider {
     height: 135vh;
   }
 }
-
-
-
-
-
-
-

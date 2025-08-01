@@ -88,6 +88,11 @@
     display: none;
   }
 
+  .reason-card {
+    height: max-content;
+    text-align: center;
+  }
+
   .reason-slider {
     display: block;
     margin-top: 50px;
@@ -105,20 +110,3 @@
     text-align: center;
   }
 }
-
-@media screen and (max-width: 480px) {
-
-  .reason-card {
-    height: 22vh;
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 400px) {
-
-  .reason-card {
-    height: max-content;
-    text-align: center;
-  }
-}
-

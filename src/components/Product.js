@@ -85,6 +85,7 @@ const Product = () => {
         </div>
         <div className='ashva-title'>
         <img src={ashvaTitle} alt="ASHVA 4X4" className="ashva-title-img" data-aos="fade" />
+         <p className='ashva-title-text'>Starts at 18L<sup>*</sup></p>
         </div>
 
       </div>
@@ -125,7 +126,8 @@ const Product = () => {
           </a>
         </div>
         <div className='reversed-ashva-title'>
-           <img src={ashvaTitle2} alt="ASHVA SERIES" className="ashva-title-img2" style={{ transform: 'scaleX(-1)' }}/>
+           <img src={ashvaTitle2} alt="ASHVA SERIES" className="ashva-title-img2" style={{ transform: 'scaleX(-1)' }} />
+           <p className='reversed-ashva-title-text'>Starts at 31L<sup>*</sup></p>
         </div>
       </div>
     </>
