@@ -37,6 +37,7 @@ const Testimonial = () => {
                 height="100%"
                 autoPlay
                 loop 
+                muted
                 playsInline
                 controls
                 onEnded={handleVideoEnd}

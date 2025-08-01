@@ -14,6 +14,8 @@ import Collaborators from './components/Collaborator';
 import Dealer from './components/Dealer';
 import Testinomial from './components/Testinomial';
 import FrameGallery from './components/FrameGallery';
+import FloatingButton from './components/FloatingButton';
+
 
 function App() {
   useEffect(() => {
@@ -28,6 +30,7 @@ function App() {
           element={
             <>
               <Navbar />
+              <FloatingButton />
               <section id="hero">
                 <Hero />
               </section>
@@ -43,11 +46,11 @@ function App() {
               <section id="Reason">
                 <Reason />
               </section>
-              <section id="contact">
-                <Contact />
-              </section>
               <section id="Testinomial">
                 <Testinomial />
+              </section>
+              <section id="contact">
+                <Contact />
               </section>
               <section id="Collaborators">
                 <Collaborators />

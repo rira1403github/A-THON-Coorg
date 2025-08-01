@@ -17,7 +17,7 @@ const Contact = () => {
           <p><FaPhoneAlt /> (+91) &nbsp;9740025534</p>
 
           <h3>Location</h3>
-          <p><FaMapMarkerAlt /> BENGALURU, KA</p>
+          <p>{/*<FaMapMarkerAlt />*/} 308, 1st Floor, 100 Feet Rd,<br />Indira Nagar 1st Stage, Stage 1,<br />Indiranagar, Bengaluru, Karnataka 560038</p>
 
           <h3>Email</h3>
           <p><FaEnvelope /> sales@a-thonallterrain.com</p>
