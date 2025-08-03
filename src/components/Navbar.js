@@ -74,7 +74,7 @@ const Navbar = () => {
               className="nav-item"
               onClick={closeMobileMenu}
             >
-              CONTACT US
+              GET A QUOTE
             </Link>
           </li>
         </ul>

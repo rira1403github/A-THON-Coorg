@@ -7,7 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Typewriter from 'typewriter-effect';
 import './hero.css';
-import img1 from '../assets/Hero-main.png';
+import img1 from '../assets/iphone.png';
 import ashvaLogo from '../assets/ashva.png';
 
 const heroData = [
