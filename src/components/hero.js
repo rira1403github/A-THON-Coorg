@@ -106,8 +106,8 @@ const Hero = () => {
                   backgroundImage: `url(${item.image})`,
                 }}
               >
-                <div className="hero-blur-overlay"></div>
-                <div className="hero-dark-overlay"></div>
+                {/* <div className="hero-blur-overlay"></div>
+                <div className="hero-dark-overlay"></div> */}
                 <div className="hero-overlay">
                   <div className="hero-content">
                     <h1 className="hero-heading">INTRODUCING</h1>

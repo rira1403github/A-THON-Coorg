@@ -23,7 +23,7 @@ const Product = () => {
           return prev;
         }
       });
-    }, 50);
+    }, 25);
 
     const interval2 = setInterval(() => {
       setSpecs2(prev => {
@@ -38,7 +38,7 @@ const Product = () => {
           return prev;
         }
       });
-    }, 60);
+    }, 25);
 
     return () => {
       clearInterval(interval1);
@@ -93,7 +93,7 @@ const Product = () => {
       <div
         className="product-section reversed"
         style={{ backgroundImage: `url(${secondProductBg})`, transform: 'scaleX(-1)' }}
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         <div className="drivetrain-buttons reversed-buttons" style={{ transform: 'scaleX(-1)' }}>
           <button>2WD</button>
