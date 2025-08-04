@@ -95,7 +95,7 @@
 /* Mobile View */
 @media (max-width: 480px) {
   .about-us-section {
-    padding: 40px 16px;
+    padding: 40px 12px;
   }
 
   .about-title {

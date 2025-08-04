@@ -117,6 +117,16 @@
 }
 
 @media (max-width: 480px) {
+
+
+.testimonial-section {
+  padding: 3rem 0rem 2rem;
+}
+
+.testimonial-slide {
+  gap: 2rem;
+}
+
   .testimonial-title {
     font-size: 2rem;
   }

@@ -62,15 +62,15 @@ const Product = () => {
         <div className="spec-boxes">
           <div className="spec-item" data-aos="zoom-in">
             <p className="spec-value">{specs1.cc}<span className="unit"> CC</span></p>
-            <p>4 STROKE V-TWIN</p>
+            <p className="spec-name">4 STROKE V-TWIN</p>
           </div>
           <div className="spec-item" data-aos="zoom-in" data-aos-delay="100">
             <p className="spec-value">{specs1.nm}<span className="unit"> NM</span></p>
-            <p>@ 5500 RPM</p>
+            <p className="spec-name">@ 5500 RPM</p>
           </div>
           <div className="spec-item" data-aos="zoom-in" data-aos-delay="200">
             <p className="spec-value">{specs1.hp}<span className="unit"> HP</span></p>
-            <p>@ 6500 RPM</p>
+            <p className="spec-name">@ 6500 RPM</p>
           </div>
         </div>
 
@@ -104,15 +104,15 @@ const Product = () => {
         <div className="spec-boxes reversed-specs" style={{ transform: 'scaleX(-1)', color: 'white' }}>
           <div className="spec-item" data-aos="zoom-in">
             <p className="spec-value">{specs2.cc}<span className="unit"> CC</span></p>
-            <p>4 STROKE INLINE-4</p>
+            <p className="spec-name">4 STROKE INLINE-4</p>
           </div>
           <div className="spec-item" data-aos="zoom-in" data-aos-delay="100">
             <p className="spec-value">{specs2.nm}<span className="unit"> NM</span></p>
-            <p>@ 5200 RPM</p>
+            <p className="spec-name">@ 5200 RPM</p>
           </div>
           <div className="spec-item" data-aos="zoom-in" data-aos-delay="200">
             <p className="spec-value">{specs2.hp}<span className="unit"> HP</span></p>
-            <p>@ 6300 RPM</p>
+            <p className="spec-name">@ 6300 RPM</p>
           </div>
         </div>
 
