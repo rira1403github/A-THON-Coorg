@@ -17,6 +17,12 @@
   font-family: 'Orbitron', 'Arial', sans-serif;
 }
 
+.product-title {
+  background-color: #121212;
+  height: 30vh;
+  width: 100%;
+}
+
 .reversed .background-overlay {
   position: absolute;
   top: 0;
@@ -351,12 +357,12 @@
 
   .ashva-title-img {
    width: 160px;
-   height: 30px;
+   height: 42.5px;
  }
 
  .ashva-title-img2 {
-   width:160px;
-   height: 30px;
+   width:150px;
+   height: 35px;
  }
 
 

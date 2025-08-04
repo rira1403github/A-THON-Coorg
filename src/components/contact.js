@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './contact.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FaPhoneAlt, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 const Contact = () => {
   useEffect(() => {
@@ -14,14 +14,38 @@ const Contact = () => {
       <div className="contact-container" data-aos="fade-up">
         <div className="contact-info">
           <h3>Telephone</h3>
+          <p>
+            <a href="tel:+919740025534" style={{ textDecoration: 'none', color: 'inherit' }}>
+              <FaPhoneAlt /> (+91) &nbsp;9740025534
+              </a>
+              </p>
+              <h3>Location</h3>
+              <p>
+                <a href="https://www.google.com/maps?q=308,+1st+Floor,+100+Feet+Rd,+Indira+Nagar+1st+Stage,+Stage+1,+Indiranagar,+Bengaluru,+Karnataka+560038" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }} 
+                >308, 1st Floor, 100 Feet Rd,<br />
+                Indira Nagar 1st Stage, Stage 1,<br />
+                Indiranagar, Bengaluru, Karnataka 560038
+                </a>
+                </p>
+                <h3>Email</h3>
+                <p>
+                  <a href="mailto:sales@a-thonallterrain.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    <FaEnvelope /> sales@a-thonallterrain.com
+                    </a>
+                    </p>
+                    </div>
+
+        {/* <div className="contact-info">
+          <h3>Telephone</h3>
           <p><FaPhoneAlt /> (+91) &nbsp;9740025534</p>
 
           <h3>Location</h3>
-          <p>{/*<FaMapMarkerAlt />*/} 308, 1st Floor, 100 Feet Rd,<br />Indira Nagar 1st Stage, Stage 1,<br />Indiranagar, Bengaluru, Karnataka 560038</p>
+          <p>308, 1st Floor, 100 Feet Rd,<br />Indira Nagar 1st Stage, Stage 1,<br />Indiranagar, Bengaluru, Karnataka 560038</p>
 
           <h3>Email</h3>
           <p><FaEnvelope /> sales@a-thonallterrain.com</p>
-        </div>
+        </div> */}
+        
 
         <div className="contact-divider"></div>
 

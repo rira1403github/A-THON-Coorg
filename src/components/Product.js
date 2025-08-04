@@ -48,12 +48,18 @@ const Product = () => {
 
   return (
     <>
+      <div 
+      className='product-title' 
+      data-aos="fade-up">
+
+      </div>
       <div
         className="product-section"
         style={{ backgroundImage: `url(${productBg})` }}
         data-aos="fade-up"
       >
         <div className="drivetrain-buttons">
+          <button>2<br />Seater</button>
           <button>2WD</button>
           <button>4WD</button>
           <button>DIFF. LOCK</button>
@@ -85,17 +91,23 @@ const Product = () => {
         </div>
         <div className='ashva-title'>
         <img src={ashvaTitle} alt="ASHVA 4X4" className="ashva-title-img" data-aos="fade" />
-         <p className='ashva-title-text'>Starts at 21L<sup>*</sup></p>
+         <p className='ashva-title-text'>Starts at 22L<sup>*</sup></p>
         </div>
 
       </div>
 
+      <div 
+      className='product-title' 
+      data-aos="fade-up">
+
+      </div>
       <div
         className="product-section reversed"
         style={{ backgroundImage: `url(${secondProductBg})`, transform: 'scaleX(-1)' }}
         // data-aos="fade-up"
       >
         <div className="drivetrain-buttons reversed-buttons" style={{ transform: 'scaleX(-1)' }}>
+          <button>4<br />Seater</button>
           <button>2WD</button>
           <button>4WD</button>
           <button>DIFF. LOCK</button>

@@ -16,7 +16,6 @@ const ReasonSection = () => {
   useEffect(() => {
     AOS.init({ duration: 800 });
 
-    // Stub: Replace with actual fetch API if needed
     const fetchedData = [
       {
         icon: <img src={madeInIndia} alt="Made in India" className="reason-img" />,
@@ -64,7 +63,6 @@ const ReasonSection = () => {
         ))}
       </div>
 
-      {/* Mobile Swiper View */}
       <div className="reason-slider">
         <Swiper
           modules={[Autoplay, Pagination]}

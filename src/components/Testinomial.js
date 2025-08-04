@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import video1 from '../assets/Videos/video1.mp4';
 
 const Testimonial = () => {
   const swiperRef = useRef(null);
@@ -42,7 +43,7 @@ const Testimonial = () => {
                 controls
                 onEnded={handleVideoEnd}
               >
-                <source src="/videos/video1.mp4" type="video/mp4" />
+                <source src={video1} type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
