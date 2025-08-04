@@ -87,6 +87,11 @@
     flex-direction: column;
   }
 
+  .social-footer {
+   padding: 20px 0;
+   gap: 30px;
+  }
+
   .toggle-icon {
     display: inline;
   }
@@ -113,6 +118,13 @@
     max-height: 0;
     overflow: hidden;
   }
+
+
+  .social-footer {
+   padding: 15px 0;
+   gap: 20px;
+  }
+
 
   .footer-col-links.open {
     max-height: 1000px;

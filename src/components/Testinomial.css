@@ -116,23 +116,44 @@
   }
 }
 
-@media (max-width: 480px) {
 
+@media (max-width: 480px) {
 
 .testimonial-section {
   padding: 3rem 0rem 2rem;
 }
 
 .testimonial-slide {
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
   .testimonial-title {
     font-size: 2rem;
+    margin-bottom: 3rem;
   }
 
   .testimonial-text {
     font-size: 1.1rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.9rem;
+  }
+}
+
+
+@media (max-width: 390px) {
+
+.testimonial-section {
+  padding: 3rem 0rem 2rem;
+}
+
+.testimonial-slide {
+  gap: 0.5rem;
+}
+
+  .testimonial-text {
+    font-size: 1rem;
   }
 
   .testimonial-author {

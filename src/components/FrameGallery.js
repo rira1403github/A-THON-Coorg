@@ -18,7 +18,7 @@ const images = [img1, img2, img3, img4, img5, img6, img7];
 const UspSection = () => {
   return (
     <section className="usp-section" data-aos="fade-up">
-      <h2 className="usp-heading">OUR USP</h2>
+      {/* <h2 className="usp-heading">OUR USP</h2> */}
       <div className="usp-container" data-aos="fade-up">
       <div className="usp-text">
         <p className="usp-description">

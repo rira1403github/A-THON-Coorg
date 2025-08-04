@@ -344,19 +344,19 @@
 }
 
   .drivetrain-buttons button {
-    width: 45px;
-    height: 45px;
-    font-size: 10px;
+    width: 35px;
+    height: 35px;
+    font-size: 8px;
   }
 
   .ashva-title-img {
-   width: 180px;
-   height: 40px;
+   width: 160px;
+   height: 30px;
  }
 
  .ashva-title-img2 {
-   width:180px;
-   height: 35px;
+   width:160px;
+   height: 30px;
  }
 
 
@@ -375,22 +375,22 @@
 }
 
 .know-more-button, .reversed-know-more-button {
-  padding: 8px 16px;
-  font-size: 0.8rem;
+  padding: 5px 12px;
+  font-size: 0.5rem;
   font-weight: 400;
 }
 
  .spec-value {
-    font-size: 14px;
+    font-size: 12px;
   }
 
 .unit {
-  font-size: 0.6em;
+  font-size: 0.5em;
   opacity: 0.8;
 }
 
 .spec-name {
-  font-size: 10px;
+  font-size: 8px;
 }
 
 
@@ -403,11 +403,11 @@
 
   
 .ashva-title-text {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .reversed-ashva-title-text {
-  font-size: 20px;
+  font-size: 16px;
   margin-top: 0.2rem;
 }
 

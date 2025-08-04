@@ -84,3 +84,10 @@
     width: 100%;
   }
 }
+
+@media (max-width: 480px) {
+  .usp-section {
+    flex-direction: column;
+    padding: 20px 5px;
+  }
+}

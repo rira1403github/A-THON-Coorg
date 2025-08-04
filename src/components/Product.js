@@ -85,7 +85,7 @@ const Product = () => {
         </div>
         <div className='ashva-title'>
         <img src={ashvaTitle} alt="ASHVA 4X4" className="ashva-title-img" data-aos="fade" />
-         <p className='ashva-title-text'>Starts at 18L<sup>*</sup></p>
+         <p className='ashva-title-text'>Starts at 21L<sup>*</sup></p>
         </div>
 
       </div>
