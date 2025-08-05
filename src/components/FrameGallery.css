@@ -5,7 +5,6 @@
   background-color: #121212;
 }
 
-
 .usp-section::after {
   content: "";
   position: absolute;
@@ -31,18 +30,18 @@
 }
 
 .usp-heading {
-  font-size: 3.5rem;
+  font-size: 3.3rem;
   font-weight: 800;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   text-align: center;
   color: #f9f8f5;
   font-family: 'Raleway', sans-serif;
 }
 
 .usp-description {
-  font-size: 24px;
+  font-size: 20px;
   color: #cfcfcf;
-  line-height: 1.7;
+  line-height: 1.6;
   text-align: justify;
   font-family: 'Raleway', sans-serif;
 }

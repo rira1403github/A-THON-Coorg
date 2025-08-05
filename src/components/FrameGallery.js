@@ -18,13 +18,14 @@ const images = [img1, img2, img3, img4, img5, img6, img7];
 const UspSection = () => {
   return (
     <section className="usp-section" data-aos="fade-up">
-      {/* <h2 className="usp-heading">OUR USP</h2> */}
       <div className="usp-container" data-aos="fade-up">
       <div className="usp-text">
+        <h2 className="usp-heading">ASHVA SERIES</h2>
         <p className="usp-description">
-          Forged in the heart of Karnataka, A-THON champions the spirit of Indian innovation as a premier off-road vehicle manufacturer.
-          Our rugged, all-terrain vehicles are proudly <em>*Made in India*</em>, engineered with homegrown ingenuity to conquer the toughest landscapes.
-          We don't just build machines; we drive a revolution in mobility, proving that the future of all-terrain exploration is born right here.
+          Some vehicles are built for the road. The <em>ASHVA</em> was built to leave it behind entirely. 
+          The <em>ASHVA SERIES</em> is a PUREBRED Side-by-Side TRAIL MACHINE manufactured in India to tackle the most challenging off-road terrains & extreme environments. 
+          Designed for unparalleled capability, the <em>ASHVA</em> built to deliver unprecedented adventures by accessing locations previously thought unreachable. 
+          This robust vehicle embodies a spirit of a horse with soul of an explorer.
         </p>
       </div>
 
