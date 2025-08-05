@@ -10,6 +10,7 @@ import video1 from '../assets/Videos/video1.mp4';
 
 const Testimonial = () => {
   const swiperRef = useRef(null);
+  const videoRef = useRef(null);
 
   const handleVideoEnd = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
@@ -19,6 +20,29 @@ const Testimonial = () => {
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
+
+    const videoElement = videoRef.current;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoElement.play();
+        } else {
+          videoElement.pause();
+        }
+      },
+      {
+        threshold: 0.5, // 50% of video should be visible
+      }
+    );
+
+    if (videoElement) {
+      observer.observe(videoElement);
+    }
+
+    return () => {
+      if (videoElement) observer.unobserve(videoElement);
+    };
   }, []);
 
   return (
@@ -34,11 +58,12 @@ const Testimonial = () => {
           <div className="testimonial-slide">
             <div className="testimonial-video">
               <video
+                ref={videoRef}
                 width="100%"
                 height="100%"
                 autoPlay
-                loop 
                 muted
+                loop
                 playsInline
                 controls
                 onEnded={handleVideoEnd}

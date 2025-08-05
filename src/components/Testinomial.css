@@ -27,7 +27,7 @@
 }
 
 .testimonial-swiper {
-  width: 80%;
+  width: 100%;
   max-width: 1000px;
   margin: auto;
 }
@@ -124,12 +124,13 @@
 }
 
 .testimonial-slide {
-  gap: 1.5rem;
+  gap: 0rem;
+  padding: 1rem;
 }
 
   .testimonial-title {
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
 
   .testimonial-text {
@@ -143,14 +144,10 @@
 
 
 @media (max-width: 390px) {
-
+/* 
 .testimonial-section {
   padding: 3rem 0rem 2rem;
-}
-
-.testimonial-slide {
-  gap: 0.5rem;
-}
+} */
 
   .testimonial-text {
     font-size: 1rem;
