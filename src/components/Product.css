@@ -112,11 +112,12 @@
 }
 
 .know-more-button {
-  padding: 12px 24px;
+  padding: 12px;
   font-size: 1rem;
   font-weight: bold;
   background-color: #161616;
-  color: #f9f8f5;
+  letter-spacing: 2px;
+  color: #3b8132;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -129,6 +130,7 @@
 .know-more-button:hover {
   background-color: #000;
   transform: scale(1.05);
+  color: #35af25;
 }
 
 
@@ -144,11 +146,12 @@
 }
 
 .reversed-know-more-button {
-  padding: 12px 24px;
+  padding: 12px;
   font-size: 1rem;
   font-weight: bold;
   background-color: #161616;
-  color: #f9f8f5;
+  letter-spacing: 2px;
+  color: #3b8132;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -161,6 +164,7 @@
 .reversed-know-more-button:hover {
   background-color: #000;
   transform: scale(1.05);
+  color: #35af25;
 }
 
 .spec-boxes {

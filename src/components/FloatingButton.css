@@ -3,13 +3,14 @@
   bottom: 24px;
   right: 24px;
   z-index: 9999;
-  background-color: #161616;
-  color: #f9f8f5;
+  background-color: #f9f8f5;
+  backdrop-filter: blur(5px);
+  color: #121212;
   border: none;
   border-radius: 12px;
-  padding: 14px 20px;
+  padding: 12px 16px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
@@ -17,4 +18,16 @@
 
 .floating-btn:hover {
   transform: scale(1.05);
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 488px) {
+  .floating-btn {
+  bottom: 30px;
+  right: 30px;
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
 }
