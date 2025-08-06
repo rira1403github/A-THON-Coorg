@@ -1,14 +1,14 @@
 import React from 'react';
 import './Collaborator.css';
 
-import logo1 from '../assets/C-image1.png';
-import logo2 from '../assets/C-image2.png';
-import logo3 from '../assets/C-image3.png';
-import logo4 from '../assets/C-image4.png';
-import logo5 from '../assets/C-image5.png';
-import logo6 from '../assets/C-image6.png';
-import logo7 from '../assets/C-image7.png';
-import logo8 from '../assets/C-image8.png';
+import logo1 from '../assets/C-image1.webp';
+import logo2 from '../assets/C-image2.webp';
+import logo3 from '../assets/C-image3.webp';
+import logo4 from '../assets/C-image4.webp';
+import logo5 from '../assets/C-image5.webp';
+import logo6 from '../assets/C-image6.webp';
+import logo7 from '../assets/C-image7.webp';
+import logo8 from '../assets/C-image8.webp';
 
 const logos = [
   { img: logo1, link: 'https://www.artpark.in/', height: 65, width: 300 },

@@ -3,6 +3,9 @@
   padding: 2rem 2rem 4rem;
   background-color: #121212;
   overflow: hidden;
+  /* max-width: 1450px;
+  margin: auto; */
+  align-items: center;
   text-align: center;
 }
 
@@ -26,6 +29,8 @@
 }
 
 .slider {
+  max-width: 1450px;
+  margin: auto;
   background-color: #f9f8f5;
   width: 100%;
   overflow: hidden;

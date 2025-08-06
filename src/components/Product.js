@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Product.css';
-import productBg from '../assets/Hero-img.png';
-import secondProductBg from '../assets/Ashva-4s.png';
+import productBg from '../assets/Ashva4x4.webp';
+import secondProductBg from '../assets/Ashva-4s.webp';
 import ashvaTitle from '../assets/Ashva-text.png';
 import ashvaTitle2 from '../assets/Ashva-4s-text.png';
 
@@ -48,6 +48,7 @@ const Product = () => {
 
   return (
     <>
+    <section className='product-section-container'>
       <div 
       className='product-headind-container' 
       data-aos="fade-left">
@@ -149,6 +150,7 @@ const Product = () => {
            <p className='reversed-ashva-title-text'>Starts at 31L<sup>*</sup></p>
         </div>
       </div>
+      </section>
     </>
   );
 };

@@ -98,7 +98,7 @@ const Contact = () => {
               </select>
             </div>
 
-            <textarea name="message" placeholder="Message..." rows="5" required></textarea>
+            <textarea name="message" placeholder="Message..." rows="5" ></textarea>
             <button type="submit" className="submit-btn">Submit</button>
           </form>
         </div>

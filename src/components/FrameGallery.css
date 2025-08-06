@@ -3,6 +3,8 @@
   gap: 40px;
   padding: 40px;
   background-color: #121212;
+  max-width: 1450px;
+  margin: auto;
 }
 
 .usp-section::after {
