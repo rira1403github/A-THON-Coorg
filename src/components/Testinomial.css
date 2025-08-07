@@ -174,11 +174,14 @@
 
 @media (max-width: 480px) {
   .testimonial-section {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
+  }
+  .testimonial-title {
+    margin-bottom: 1.3rem;
   }
 
   .testimonial-preview-card {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .testimonial-preview-card h3 {
