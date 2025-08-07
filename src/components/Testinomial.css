@@ -2,7 +2,7 @@
 
 .testimonial-section {
   position: relative;
-  padding: 4rem 1rem;
+  padding: 3rem 1rem;
   background-color: #121212;
   color: #f9f8f5;
   font-family: 'Poppins', 'Arial', sans-serif;
@@ -174,11 +174,11 @@
 
 @media (max-width: 480px) {
   .testimonial-section {
-    padding: 3rem 1rem;
+    padding: 1rem;
   }
 
   .testimonial-preview-card {
-    padding: 1.5rem;
+    padding: 1rem;
   }
 
   .testimonial-preview-card h3 {
