@@ -47,7 +47,6 @@ const ReasonSection = () => {
         WHY A-THON
       </h2>
 
-      {/* Desktop Grid View */}
       <div className="reason-grid">
         {reasons.map((item, index) => (
           <div

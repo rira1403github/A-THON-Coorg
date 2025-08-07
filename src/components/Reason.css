@@ -6,6 +6,16 @@
   font-family: 'Poppins','arial', sans-serif;
   overflow: hidden;
 }
+/* 
+.reason-section ::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  right: 2rem;
+  height: 1px;
+  background-color: #6d6969;
+} */
 
 .reason-heading {
   font-size: 2rem;

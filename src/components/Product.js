@@ -53,7 +53,7 @@ const Product = () => {
       className='product-headind-container' 
       data-aos="fade-left">
         <h2 className='product-h2'>ASHVA 4x4</h2>
-        <div className="underline" />
+        <div className="underlineProduct" />
         <p className='product-p'>ASHVA 4X4 is engineered for one purpose: total off-road dominance. 
           Every ounce of its performance is channeled directly to you through its 1000cc V-Twin engine, built to conquer every terrain. 
           It’s the perfect machine for the duo that lives for the edge and chases the horizon, together.</p>
@@ -96,7 +96,7 @@ const Product = () => {
         </div>
         <div className='ashva-title'>
         <img src={ashvaTitle} alt="ASHVA 4X4" className="ashva-title-img" data-aos="fade" />
-         <p className='ashva-title-text'>Starts at 22L<sup>*</sup></p>
+         <p className='ashva-title-text'>Starts at 18L<sup>*</sup></p>
         </div>
 
       </div>
@@ -105,7 +105,7 @@ const Product = () => {
       className='product-headind-container' 
       data-aos="fade-right">
         <h2 className='product-h2'>ASHVA 4S</h2>
-        <div className="underline" />
+        <div className="underlineProduct" />
         <p className='product-p'>ASHVA 4S is designed to carry your fellowship into the heart of the unknown, allowing you to write your own story in the dirt and stone of the world’s most awe-inspiring places. 
           The ASHVA 4S is the machine that makes those moments possible, dissolving the distractions of daily life so you can reconnect with nature, and more importantly, with each other.</p>
       </div>

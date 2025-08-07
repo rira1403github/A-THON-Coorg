@@ -7,10 +7,9 @@ const AboutUs = () => {
       <div className="about-content">
         <div className="about-title-container">
           <h2 className="about-title">
-            Here’s what makes<br />
-            <span className="highlight">A-THON ALLTERRAIN</span>
+            ABOUT&nbsp;
+            <span className="highlight">A-THON</span>
             <div className="underline" />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;perfect for you!
           </h2>
         </div>
         <div className="about-description-container">

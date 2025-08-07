@@ -12,11 +12,12 @@ const Contact = () => {
     AOS.init({ duration: 1000 });
   }, []);
 
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
     const url =
-      'https://script.google.com/macros/s/AKfycbxDbVhDbpTC2fUurMU3nA-Tpq0c4af5HWUQDxCnLmpDeZII6j9TJIO5YzhC-OrCekA4Vg/exec';
+      'https://script.google.com/macros/s/AKfycbzAUyiBnURdW5C0hSp3ikWKRfcGJt0CpWZ0BZEp-rA-Q6kMr6FNbXlGmI61h-agwTuxfQ/exec';
 
     const formData = new URLSearchParams();
     formData.append('Name', e.target.name.value);
